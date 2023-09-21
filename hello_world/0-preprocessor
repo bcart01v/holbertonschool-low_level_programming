@@ -1,3 +1,2 @@
 #!/bin/bash
-# We need to run a C file through a pre-processor and save said results in another file
 gcc -c $CFILE
