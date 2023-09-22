@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - here is the heart of this program <3
- * Return - Should be 0
+ * main-Will return a pre-made input
+ * Return: Should be 0
  */
 int main(void)
 {
