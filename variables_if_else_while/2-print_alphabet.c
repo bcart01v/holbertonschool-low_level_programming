@@ -1,16 +1,20 @@
 #include <stdio.h>
 
 /**
- * main - function that prints alphabet
+ * main - Prints alphabet
+ *
  * Return: Should return 0 pending no errors
  */
-
 int main(void)
 {
-	for (int i = 97; i <= 122; i++)
+	int i;
+
+	for (i = 97; i <= 122; i++)
 	{
-			putchar(i);
-			putchar('\n');
+		putchar(i);
 	}
+
+	putchar('\n');
+
 	return (0);
 }
