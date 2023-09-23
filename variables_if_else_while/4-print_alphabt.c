@@ -8,20 +8,27 @@
 int main(void)
 {
 	int i;
+	char buffer[24];
+	int index = 0;
 
 	for (i = 97; i <= 100; i++)
 	{
-		putchar(i);
+		buffer[index++] = (char)i;
 	}
 	for (i = 102; i <= 112; i++)
 	{
-		putchar(i);
+		buffer[index++] = (char)i;
 	}
 	for (i = 114; i <= 122; i++)
 	{
-		putchar(i);
+		buffer[index++] = (char)i;
 	}
+	for (i = 0; i < index; i++)
+	{
+		putchar(buffer[i]);
+	}
+
 	putchar('\n');
 
 	return (0);
-}
+	}
