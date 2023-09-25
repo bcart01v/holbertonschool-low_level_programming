@@ -1,25 +1,16 @@
 #include "main.h"
+#include <unistd.h>
 
 /**
- * main - Program beginning
+ * main - Prints _putchar.
  *
- * Return: return a 0 if theres no error!
+ * Return: Always 0 (Success)
  *
- * Description: prints out "_putchar"
  */
 
 int main(void)
 {
-	char c[8] = "_putchar";
-
-	int i;
-
-	for (i = 0; i < 8 ; i++)
-	{
-		_putchar(c[i]);
-	}
-
-	_putchar('\n');
-
+	char str[] = "_putchar\n";
+		write(1, str, sizeof(str) - 1);
 	return (0);
 }
