@@ -1,8 +1,5 @@
 #include "main.h"
-<<<<<<< HEAD
 
-=======
->>>>>>> 57dc835a12676a43b0fe1067e5c57b1d9d43792d
 /**
  * print_alphabet - Prints the alphabet in lowercase.
  *
