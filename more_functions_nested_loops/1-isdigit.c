@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _isdigit - checks if what is passed is a digit
- * @x: character to check
- * return: 1 if it is, 0 if it is not
- * BJC - 20230929
- */
+* _isdigit - Check if a character is a digit
+* @x: The character to check
+*
+* Return: 1 if the character is a digit, 0 otherwise.
+*/
 
 int _isdigit(int x)
 {
