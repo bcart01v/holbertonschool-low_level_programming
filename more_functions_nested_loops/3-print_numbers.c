@@ -1,15 +1,18 @@
+#include <unistd.h>
 #include "main.h"
-
 /**
- * print_numbers - Prints numbers 0 to 9
- *  @i - The Character I'm using
- * BJC 2023-09-30
-*/
-int print_numbers(void)
-{ int i;
-	for (i = 48 ; i <= 57 ; i++) 
-     {
-     _putchar(i);
-     } 
-     _putchar('\n');
+ * print_numbers - prints from 0 to 9
+ *
+ * Return: none
+ */
+void print_numbers(void)
+{
+	int num;
+	int _putchar(int c);
+	for (num = 0; num < 10; num++)
+	{
+		_putchar(num + '0');
+	}
+	_putchar('\n');
+
 }
