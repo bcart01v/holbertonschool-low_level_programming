@@ -2,8 +2,8 @@
 #include "main.h"
 
 /**
- * more_numbers - just prints more numbers
- * bjc 2023 10 01
+* more_numbers - just prints more numbers
+* bjc 2023 10 01
 */
 
 void more_numbers(void)
