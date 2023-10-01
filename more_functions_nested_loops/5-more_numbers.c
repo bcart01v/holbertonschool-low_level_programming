@@ -8,9 +8,9 @@
 
 void more_numbers(void)
 {
-    int number;
-    for (number = 0; number < 10; number++)
-    {
-        printf("01234567891011121314\n");
-        }
-        }
+int number;
+	for (number = 0; number < 10; number++)
+	{
+		printf("01234567891011121314\n");
+		}
+		}
