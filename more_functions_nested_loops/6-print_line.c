@@ -6,14 +6,12 @@
  * bjc 2023 10 01
 */
 
-void print_line(int)
+void print_line(int n)
 {
-int n;
 int i;
 	for (i = 0; i <n; i++)
 	{
 		_putchar(95);
 	}
-	_putchar('/n');
-	return(n);
+	_putchar('\n');
 }
