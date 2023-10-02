@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Wextra _putchar.c main.c $1 -o $2
+gcc -Wall -pedantic -Werror -Wextra _putchar.c main.c $1 -o $2
