@@ -6,7 +6,7 @@
 * BJC - 2023-10-02
 */
 
-void puts_half (char *str)
+void puts_half(char *str)
 {
 	int j = 0;
 	int k;
