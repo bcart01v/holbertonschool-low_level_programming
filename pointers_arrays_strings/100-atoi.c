@@ -15,10 +15,10 @@ unsigned int num = 0;
 do {
 	if (*s == '-')
 	i *= -1;
-		else if (*s >= '0' && *s <= '9')
+	else if (*s >= '0' && *s <= '9')
 	num = num * 10 + (*s - '0');
-		else if (num > 0)
+	else if (num > 0)
 	break;
 	} while (*s++);
-	return (num *i);
+	return (num * i);
 }
