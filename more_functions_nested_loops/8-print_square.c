@@ -11,14 +11,14 @@ void print_square(int size)
 int counter;
 
 if (size <= 0)
-	{
+{
 	_putchar('\n');
-	}
-	else
+}
+else
+{
+	for (counter = 0; counter < size; counter++)
 	{
-		for (counter = 0; counter < size; counter++)
-		{
-			_putchar(35);
-		}
+		_putchar(35);
 	}
+}
 }
