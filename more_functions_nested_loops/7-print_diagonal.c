@@ -2,7 +2,7 @@
 
 /**
 * print_diagonal - were printing a diagonal line
-* @n - the unput were getting to print to
+* @n: the unput were getting to print to
 * bjc - 2023-10-01
 */
 
