@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_rev - prints reverse order. 
+* print_rev - prints reverse order.
 * @s: string we are reversing
 * BJC - 2023-10-02
 */
