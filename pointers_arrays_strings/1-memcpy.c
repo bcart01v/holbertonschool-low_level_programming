@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* *_memcpy - Copies n bytes
+* _memcpy - Copies n bytes
 * @dest: Destication
 * @src: The Source
 * @n: An Int
@@ -16,11 +16,12 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  * memory area to src, to memory area dest
  * returns a pointer to dest
  */
-	while (n--)
+	int CountyWounty = 0;
+
+	for (CountyWounty = 0; CountyWounty < n; CountyWounty++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		dest[CountyWounty] = src[CountyWounty];
+		n--;
 	}
-return (dest);
+	return (dest);
 }
