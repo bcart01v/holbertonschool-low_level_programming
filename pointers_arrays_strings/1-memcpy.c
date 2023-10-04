@@ -16,9 +16,16 @@ char *_memcpy(char *dest, char *src, unsigned int n)
  * memory area to src, to memory area dest
  * returns a pointer to dest
  */
-	int CountyWounty = 0;
 
-	for (CountyWounty = 0; CountyWounty < n; CountyWounty++)
+/**
+* We have to make an Outdated counter to check counts,
+* Because the 89 standard wont allow you to compare 
+* an unsigned int to an int. 
+*/
+	int CountyWounty = 0;
+	int OutdatedCounter = n;
+
+	for (CountyWounty = 0; CountyWounty < OutdatedCounter; CountyWounty++)
 	{
 		dest[CountyWounty] = src[CountyWounty];
 		n--;
