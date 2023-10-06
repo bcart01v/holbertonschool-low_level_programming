@@ -11,15 +11,6 @@
 
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-/**
- * the function copies n bytes from
- * memory area to src, to memory area dest
- * returns a pointer to dest.
- *
- * Also, the reason for OutdatedCounter is
- * the 89 standard doesn't allow compairing
- * an unsigned int to an int.
- */
 
 	int CountyWounty = 0;
 	int OutdatedCounter = n;
