@@ -11,19 +11,17 @@
 
 char *_strchr(char *s, char c)
 {
-	char *benisawesome = s;
+	int benisawesome = *s;
 
-	while (*benisawesome != '\0')
-	{
-	if (*benisawesome == c)
+	while (1)
 		{
-		return (benisawesome);
-		benisawesome++;
-	}
-	if (*benisawesome == 0)
-	{
-		return (NULL);
-	}
-	}
-	return (0);
+			if (benisawesome == c)
+			{
+				return (s - 1);
+			}
+				if (benisawesome == 0)
+			{
+				return (NULL);
+			}
+		}
 }
