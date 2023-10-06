@@ -14,15 +14,15 @@ char *_strchr(char *s, char c)
 	int benisawesome;
 
 	while (1)
+	{
+		benisawesome = *s++;
+		if (benisawesome == c)
 		{
-			benisawesome = *s++;
-			if (benisawesome == c)
-			{
-				return (s - 1);
-			}
-				if (benisawesome == 0)
-			{
-				return (NULL);
-			}
+			return (s - 1);
 		}
+			if (benisawesome == 0)
+		{
+			return (NULL);
+		}
+	}
 }
