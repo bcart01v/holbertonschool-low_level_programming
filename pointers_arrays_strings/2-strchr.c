@@ -18,12 +18,12 @@ char *_strchr(char *s, char c)
 	if (*benisawesome == c)
 		{
 		return (benisawesome);
-		}
 		benisawesome++;
 	}
 	if (*benisawesome == 0)
 	{
 		return (NULL);
 	}
-	return (NULL);
+	}
+	return (0);
 }
