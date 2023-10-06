@@ -11,8 +11,8 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int countywounty = 0;
-	
-	for (; *s != '\0'; s++) 
+
+	for (; *s != '\0'; s++)
 	{
 		char *tempcheck = accept;
 		int found = 0;
@@ -25,14 +25,14 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if (found) {
+		if (found) 
+		{
 			countywounty++;
-
 		}
-		else  {
-			break;
+		else
+		{
+		break;
 		}
 	}
-return countywounty;
-
+return (countywounty);
 }
