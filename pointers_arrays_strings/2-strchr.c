@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-* _strchr
-* @s: First Character
-* @c: Second Character
+* _strchr - locates a character in a string
+* @s: String we are searching
+* @c: The character we're looking for
+* Return: A pointer to the first C
 * BJC - 2023-10-06
 */
 
@@ -11,13 +12,15 @@
 char *_strchr(char *s, char c)
 {
 	char *benisawesome = s;
+
 	while (*benisawesome != '\0')
 	{
 	if (*benisawesome == c)
 		{
 		printf("%s\n", benisawesome);
+		return benisawesome;
 		}
 		benisawesome++;
 	}
-	return(0);
+	return (0);
 }
