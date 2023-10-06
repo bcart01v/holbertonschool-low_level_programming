@@ -11,10 +11,11 @@
 
 char *_strchr(char *s, char c)
 {
-	int benisawesome = *s;
+	int benisawesome;
 
 	while (1)
 		{
+			benisawesome = *s++;
 			if (benisawesome == c)
 			{
 				return (s - 1);
