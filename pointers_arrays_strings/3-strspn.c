@@ -4,7 +4,7 @@
 * _strspn - gets length of a prefix substring
 * @s: the string we're checking
 * @accept: what were comparing too
-* Return - The number bytes
+* Return: The number bytes
 * BJC - 2023-10-06
 */
 
@@ -25,7 +25,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if (found) 
+		if (found)
 		{
 			countywounty++;
 		}
