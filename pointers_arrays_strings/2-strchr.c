@@ -17,10 +17,13 @@ char *_strchr(char *s, char c)
 	{
 	if (*benisawesome == c)
 		{
-		printf("%s\n", benisawesome);
-		return benisawesome;
+		return (benisawesome);
 		}
 		benisawesome++;
+	}
+	if (*benisawesome == 0)
+	{
+		return (NULL);
 	}
 	return (0);
 }
