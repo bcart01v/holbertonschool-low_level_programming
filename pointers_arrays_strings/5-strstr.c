@@ -5,7 +5,7 @@
 * @haystack: The string we're searching
 * @needle: the thing we're looking for
 * Return: The results
-* BJC - 2023-10-06 
+* BJC - 2023-10-06
 */
 
 char *_strstr(char *haystack, char *needle)
