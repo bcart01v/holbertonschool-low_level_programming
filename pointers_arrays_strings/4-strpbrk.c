@@ -13,9 +13,9 @@ char *_strpbrk(char *s, char *accept)
 	int firstcount, secondcount;
 	char *diddlydoo;
 
-	for (firstcount = 0; s[firstcount] !='\0'; firstcount++)
+	for (firstcount = 0; s[firstcount] != '\0'; firstcount++)
 	{
-		for (secondcount = 0; accept[secondcount] !='\0' ;secondcount++)
+		for (secondcount = 0; accept[secondcount] != '\0'; secondcount++)
 		{
 			if (accept[secondcount] == s[firstcount])
 			{
