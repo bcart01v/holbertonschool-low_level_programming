@@ -10,19 +10,18 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	char *diddlydoo;
-	int firstcount, secondcount;
-
-	for (firstcount = 0; haystack[firstcount] != '\0'; firstcount++)
+	for (; *haystack != '\0'; haystack++)
 	{
-		for (secondcount = 0; needle[secondcount] != '\0'; secondcount++)
+		char *one = haystack;
+		char *two = needle;
+
+		while (*one == *two && *two != '\0')
 		{
-			if (haystack[firstcount] <= needle[secondcount])
-			{
-				diddlydoo = &needle[secondcount];
-				return (diddlydoo);
-			}
+			one++;
+			two++;
 		}
+		if (*two == '\0')
+			return (haystack);
 	}
-	return (0);
+	return (NULL);
 }
