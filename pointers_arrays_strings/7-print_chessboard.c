@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* print_chessboard: prints a chessboard.
+* print_chessboard - prints a chessboard.
 * @a: the pointer
 * BJC - 2023-10-06
 */
