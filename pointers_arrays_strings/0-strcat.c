@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
-* _strcat - Append Src string to dest string 
+* _strcat - Append Src string to dest string
 * @dest: The destination
-* @src: The source 
+* @src: The source
 * Return: The destination!
 * BJC - 2023-10-08
 */
@@ -16,12 +16,12 @@ char *_strcat(char *dest, char *src)
 	{
 	destpoint++;
 	}
-	while (*src !='\0')
+	while (*src != '\0')
 	{
 		*destpoint = *src;
 		destpoint++;
 		src++;
 	}
 	*destpoint = '\0';
-	return dest;
+	return (dest);
 }
