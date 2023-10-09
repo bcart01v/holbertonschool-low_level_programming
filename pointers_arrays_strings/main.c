@@ -9,6 +9,7 @@ int main(void)
 	void print_chessboard(char (*a)[8]);
 	void print_diagsums(int *a, int size);
 	char *_strcat(char *dest, char *src);
+	char *_strncat(char *dest, char *src, int n);
 
 	return(0);
 }
