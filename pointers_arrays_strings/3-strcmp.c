@@ -4,6 +4,7 @@
  * _strcmp - function that compares two strings
  * @s1: function parameter
  * @s2: function parameter
+ * BJC - 2023-10-08
  * Return: s1, s2
  */
 
