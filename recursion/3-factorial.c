@@ -8,22 +8,22 @@
 */
 
 int factorial(int n)
-{
-	if (n != '\0')
 	{
-		if (n < 0)
+		if (n != '\0')
 		{
-			return (factorial(-1));
+			if (n < 0)
+			{
+				return (-1);
+			}
+			if (n == 0)
+			{
+				return (1);
+			}
+			else
+			{
+				return (n * factorial(n - 1));
+			}
+			factorial (n + 1);
 		}
-		if (n == 1)
-		{
-			return (factorial(1));
-		}
-		else
-		{
-			return (factorial(n));
-		}
-	factorial (n + 1);
+	return (0);
 	}
-return (0);
-}
