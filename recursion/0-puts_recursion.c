@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * puts_recursion - Prints string + line
+ * _puts_recursion - Prints string + line
  * @s: The string I'm printing I'm guessing
  * Return: 0 on go
  * BJC - 2023-10-13
