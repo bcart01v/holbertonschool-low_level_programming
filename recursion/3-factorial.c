@@ -3,7 +3,7 @@
 /**
  * factorial - Returns the factorial of the number passed
  * @n: The number we get the factorial for
- * Return - Do we need it? I don't know yet. Probably
+ * Return: Returns the value
  * BJC - 2023-10-13
 */
 
