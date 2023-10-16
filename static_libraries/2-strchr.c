@@ -22,7 +22,7 @@ char *_strchr(char *s, char c)
 		}
 			if (benisawesome == 0)
 		{
-			return (NULL);
+			return (0);
 		}
 	}
 }
