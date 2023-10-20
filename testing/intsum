@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+int findsum(int *nums, size_t size, size_t index, int sum) {
+    // Base cases:
+    // 1. If the desired sum is 0, we've found a combination
+    if (sum == 0)
+        return 0;
+
+    // 2. If we've reached the end of the array and haven't found the sum
+    if (index == size)
+        return -1; // Using -1 to indicate that no combination is found
+
+    // Try including the current number in the combination
+    int include = findsum(nums, size, index + 1, sum - nums[index]);
+    if (include != -1)
+        return nums[index] + include;
+
+    // Try excluding the current number from the combination
+    return findsum(nums, size, index + 1, sum);
+}
+
+int main() {
+    int arr[] = {3, 34, 4, 12, 5, 2};
+    size_t size = sizeof(arr) / sizeof(arr[0]);
+    int sum = 9;
+
+    int result = findsum(arr, size, 0, sum);
+    if (result != -1)
+        printf("The sum of numbers in the combination is: %d\n", result);
+    else
+        printf("No combination in array adds up to %d\n", sum);
+
+    return 0;
+}
