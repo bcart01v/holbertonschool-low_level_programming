@@ -2,11 +2,11 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * str_concat - bla bla bla
- * @s1: bla bla bla
- * @s2: bla bla bla
- * Return: bla
- */
+ * str_concat - The explination
+ * @s1: First String
+ * @s2: Second String
+ * Return: The Return
+ */s
 char *str_concat(char *s1, char *s2)
 {
 
