@@ -1,64 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "main.h"
 /**
- * _strlen - function that count the number of chars in a string
- * @s: input string
- * Return: lenght of a string
+ * str_concat - bla bla bla
+ * @s1: bla bla bla
+ * @s2: bla bla bla
+ * Return: bla
  */
-
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*s)
-	{
-		len++;
-		s++;
-	}
-	return (len);
-}
-
-/**
- * str_concat - function that concatenates two strings
- * @s1: the first string
- * @s2: the second string
- * Return: pointer to a string (s1 and s2), NULL if it fails
- */
-
-
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int j;
-	int len1;
-	int len2;
-	char *concat;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
+unsigned int x;
+unsigned int y;
+unsigned int a;
+unsigned int b;
+unsigned int c;
+char *z;
 
-	len1 = _strlen(s1);
-	len2 = _strlen(s2);
-	concat = malloc((len1 + len2 + 1) * sizeof(char));
-	if (concat == NULL)
-		return (NULL);
+if (s1 == NULL)
+s1 = "";
 
-	for (i = 0; i < len1; i++)
-		concat[i] = s1[i];
+if (s2 == NULL)
+s2 = "";
 
-	for (j = 0; j < len2; j++)
-		concat[j + i] = s2[j];
-
-	concat[j + i] = '\0';
-	return (concat);
+for (x = 0; s1[x] != '\0'; x++)
+{
+;
 }
 
-int main (void) 
-
+for (y = 0; s2[y] != '\0'; y++)
 {
- char *s1 = "a";
- char *s2 = "b";
- char *str_concat(char *s1, char*s2);
+;
+}
+
+c = x + y;
+
+z = malloc(c + 1);
+if (z == NULL)
+return (NULL);
+
+for (a = 0; a < x; a++)
+z[a] = s1[a];
+
+for (b = 0; b < y; b++)
+z[a + b] = s2[b];
+
+z[c] = '\0';
+
+return (z);
 }
