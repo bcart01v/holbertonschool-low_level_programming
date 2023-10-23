@@ -1,5 +1,5 @@
-#ifdef _FUNCTION_LIKE_MACRO_
-#define _FUNCTION_LIKE_MACRO_
+#ifdef _ABS_H
+#define _ABS_H
 #include <stdlib.h>
 
 #define ABS(X) absolute_value = abs(X)
