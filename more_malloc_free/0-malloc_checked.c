@@ -3,7 +3,6 @@
 /**
  * *malloc_checked - This function allocates memory using malloc
  * @b: the value we are checking
- * 
  * Return: Pointer
 */
 
