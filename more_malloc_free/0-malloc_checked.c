@@ -9,9 +9,14 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int i;
-	b = malloc_checked(sizeof (unsigned int)* 402);
-	printf("%p\n", (void *)i);
-	free(b);
-	return (0);
+    void *ptr;
+
+    ptr = malloc(b);
+
+    if (ptr == NULL)
+    {
+        exit(98); 
+    }
+
+    return ptr;
 }
