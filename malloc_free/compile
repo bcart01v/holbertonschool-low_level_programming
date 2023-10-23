@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall -pedantic -Wextra $1 -o $2
+gcc -Wall -pedantic -Wextra main.c $1 -o $2
