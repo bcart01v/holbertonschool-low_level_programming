@@ -11,9 +11,13 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 {
 	int counter = 0;
 	int length = size;
-	if (array == NULL && action == NULL) 
+	if (array == NULL) 
 	{
 		/* we have nothing, we return nothing.*/
+		return;
+	}
+	if (action == NULL)
+	{
 		return;
 	}
 	
