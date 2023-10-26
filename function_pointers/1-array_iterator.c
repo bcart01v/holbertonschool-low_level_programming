@@ -5,13 +5,17 @@
  * array_iterator - iterates an array
  * @array: The array we're passed
  * @action: the action I suppose
+ * @size: the size of the string being passed.
 */
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
+	/* Declarations */
 	int counter = 0;
 	int length = size;
-	if (array == NULL) 
+	/* End Declarations */
+
+	if (array == NULL)
 	{
 		/* we have nothing, we return nothing.*/
 		return;
