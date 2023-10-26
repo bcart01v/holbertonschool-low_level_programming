@@ -1,4 +1,4 @@
-#include <stdalign.h>
+
 #include "function_pointers.h"
 
 /**
