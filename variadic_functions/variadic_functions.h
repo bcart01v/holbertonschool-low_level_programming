@@ -1,0 +1,5 @@
+#ifdef VARADIC_FUNCTIONS
+#define VARADIC_FUNCTIONS
+
+
+#endif
