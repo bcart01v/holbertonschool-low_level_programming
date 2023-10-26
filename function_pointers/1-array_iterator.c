@@ -24,7 +24,7 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 	{
 		return;
 	}
-	
+
 	while (counter < length)
 	{
 		action(array[counter]);
