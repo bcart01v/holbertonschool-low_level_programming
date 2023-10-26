@@ -1,4 +1,7 @@
 #include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * main - this the starting point for arithmeti operation
  * @argc:interger rep
