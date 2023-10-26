@@ -1,44 +1,32 @@
 #include "3-calc.h"
-#include <stdlib.h>
-#include <stdio.h>
 
 /**
- * main - this the starting point for arithmeti operation
- * @argc:interger rep
- * @argv:array of pointer
- * Return: 0 success
+ * get_op_func- get thefunctions
+ * @s:pointer
+ * Return:NULL
  */
-
-int main(int argc, char *argv[])
+int (*get_op_func(char *s))(int, int)
 {
-	int (*op_func)(int, int);
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
 
-	int num1;
-	int num2;
-	char operator;
-	int result;
+	int i = 0;
 
-	if (argc != 4)
+	while (ops[i].op)
 	{
-		printf("Error\n");
-		exit(98);
+		if (*(ops[i].op) == *s && s[i] == '\0')
+		{
+			return (ops[i].f);
+		}
+		i++;
 	}
-
-	num1 = atoi(argv[1]);
-	operator = argv[2][0];
-	num2 = atoi(argv[3]);
-
-	op_func = get_op_func(operator);
-
-
-	if (op_func == NULL)
-	{
-		printf("error\n");
-		exit(99);
-	}
-
-	result = op_func(num1, num2);
-
-	printf("%d\n", result);
-	return (0);
+	printf("error\n");
+	exit(99);
+	return (NULL);
 }
