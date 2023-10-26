@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "3-calc.h"
+#include "3-op_functions.c"
 
 /**
  * get_op_func - Get the op func object

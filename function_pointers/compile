@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc -Wall -pedantic -Wextra 3-calc.h $1 -o $2
