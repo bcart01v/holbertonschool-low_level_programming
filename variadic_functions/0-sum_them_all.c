@@ -6,6 +6,7 @@
 /**
  * sum_them_all - Sums all numbers passed to it
  * @n: The numbers passed to the program.
+ * Return: The sum of the numbers you just passed.
 */
 
 int sum_them_all(const unsigned int n, ...)
