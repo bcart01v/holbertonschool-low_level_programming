@@ -23,7 +23,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 	}
 	/**
 	 * I don't think it matters if size is null?
-	 * If array is null, size would be null, and 
+	 * If array is null, size would be null, and
 	 * we wouldn't be at this line at all.
 	*/
 	if (size <= 0)
@@ -33,7 +33,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 	/**
 	 * Size is number of elements in array
 	 * cmp is the pointer to function to be used to compare values
-	 * int-index returns the index of the first element for which the cmp function doesn't return 0
+	 * int-index returns the index of the first element
+	 * for which the cmp function doesn't return 0
 	 * if no element matches, return -1
 	 * if size <=0 return -1
 	*/
