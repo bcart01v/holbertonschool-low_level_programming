@@ -9,6 +9,7 @@
  * @age:dog's age
  * @owner:dogs owner
  * Return:new_dog
+ * I have a memory leak but I don't know FROM WHAT
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -35,8 +36,11 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 		return (NULL);
 	}
+	if (new_dog->name == NULL && new_dog->owner == NULL)
+	{
+		free(new_dog->name);
+		free(new_dog->owner);
+		return (NULL);
+	}
 	return (new_dog);
-	free(new_dog->name);
-	free(new_dog->owner);
-	free(new_dog);
 }
