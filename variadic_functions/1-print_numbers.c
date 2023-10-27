@@ -1,26 +1,28 @@
-#include <stdlib.h>
-#include <stdarg.h>
 #include "variadic_functions.h"
+#include <stdarg.h>
+#include <stdio.h>
 
 /**
- * Notes and stuff
- * 
- * 
-*/
+ * print_numbers - print_numbers
+ * @separator: character.
+ * @n: unsigned int
+ */
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
+
 	unsigned int i;
-	va_list args;
-	va_start (args, n);
-		char *joined_numbers = NULL;
-		va_list copy_args;
-		va_copy(copy_args, args);
+	va_list(arg);
+	va_start(arg, n);
 
-		joined_numbers = va_join(separator, copy_args);
-		printf("$s", joined_numbers);
-
-		free(joined_numbers);
-	va_end(args);
+	for (i = 0; i < n; i++)
+	{
+		printf("%d", va_arg(arg, int));
+		if (separator != NULL && i < n - 1)
+		{
+			printf("%s", separator);
+		}
+	}
+	va_end(arg);
 	printf("\n");
 }
