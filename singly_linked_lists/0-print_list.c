@@ -14,7 +14,7 @@ size_t print_list(const list_t *h)
 
 	if (TempPointer == NULL) 
 	{
-	return (0);
+	  printf("[0] (nil)\n");
 	}
 
 	while (TempPointer != NULL)
@@ -30,5 +30,5 @@ size_t print_list(const list_t *h)
 		TempPointer = TempPointer->next;
 		counter++;
 	}
-	return (0);
+	return (counter);
 }
