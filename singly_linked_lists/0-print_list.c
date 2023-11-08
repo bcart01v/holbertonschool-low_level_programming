@@ -1,4 +1,4 @@
-#include <lists.h>
+#include "lists.h"
 
 /**
  * 
@@ -25,7 +25,7 @@ size_t print_list(const list_t *h)
 		}
 		else 
 		{
-		printf ("[%u] %s\n", strlen(TempPointer->str),TempPointer->str);
+		printf ("[%lu] %s\n", strlen(TempPointer->str),TempPointer->str);
 		}
 		TempPointer = TempPointer->next;
 		counter++;
