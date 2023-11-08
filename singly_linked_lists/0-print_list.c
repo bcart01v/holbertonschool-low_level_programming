@@ -14,14 +14,14 @@ size_t print_list(const list_t *h)
 
 	if (TempPointer == NULL) 
 	{
-	  printf("[0] (nil)\n");
+	return (0);
 	}
 
 	while (TempPointer != NULL)
 	{
 		if (TempPointer ->str == NULL )
 		{
-			return (0);
+			printf("[0] (nil)\n");
 		}
 		else 
 		{
