@@ -1,31 +1,30 @@
 #include "lists.h"
 
 /**
- * 
- * 
- * 
- * 
+ * size_t print_list: Prints a list
+ * @h: The list passed to us
+ * Return: 0 on failure, counter otherwise.
 */
 
-size_t print_list(const list_t *h) 
+size_t print_list(const list_t *h)
 {
 	const list_t *TempPointer = h;
-	size_t counter = 0; 
+	size_t counter = 0;
 
-	if (TempPointer == NULL) 
+	if (TempPointer == NULL)
 	{
 	return (0);
 	}
 
 	while (TempPointer != NULL)
 	{
-		if (TempPointer ->str == NULL )
+		if (TempPointer ->str == NULL)
 		{
 			printf("[0] (nil)\n");
 		}
-		else 
+		else
 		{
-		printf ("[%lu] %s\n", strlen(TempPointer->str),TempPointer->str);
+		printf("[%lu] %s\n", strlen(TempPointer->str), TempPointer->str);
 		}
 		TempPointer = TempPointer->next;
 		counter++;
