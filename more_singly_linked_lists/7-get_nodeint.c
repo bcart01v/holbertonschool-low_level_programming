@@ -4,7 +4,7 @@
  * get_nodeint_at_index - Takes the node at a specific index in a linked list
  * @head: A pointer to the start of said linked list
  * @index: the index of the node to be retrieved.
- * Return: The node at the requested index, or null is whatever. 
+ * Return: The node at the requested index, or null is whatever.
 */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
