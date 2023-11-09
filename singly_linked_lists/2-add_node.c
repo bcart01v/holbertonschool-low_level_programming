@@ -9,13 +9,13 @@
 list_t *add_node(list_t **head, const char *str)
 {
 	char *tempstr = strdup(str);
+	list_t *new_entry = malloc(sizeof(list_t));
 	
 	if (tempstr == NULL)
 	{
 		return (NULL);
 	}
-	
-	list_t *new_entry = malloc(sizeof(list_t));
+
 	if (new_entry == NULL) {
 		free(tempstr);
 		return (NULL);
