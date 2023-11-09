@@ -3,7 +3,6 @@
 /**
  * print_list - Prints all the elements of a list_t list.
  * @h: A pointer to the start of the list to be printed.
- * struct list_s: description
  * Return: The number of nodes on the list
 */
 
