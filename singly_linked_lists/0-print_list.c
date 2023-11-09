@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * print_list - Prints a list
- * @h: The list passed to us
- * Return: 0 on failure, counter otherwise.
+ * print_list - Prints all the elements of a list_t list.
+ * @h: A pointer to the start of the list to be printed.
+ * 
+ * Return: The number of nodes on the list
 */
 
 size_t print_list(const list_t *h)
