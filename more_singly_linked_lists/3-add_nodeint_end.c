@@ -11,13 +11,13 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 
 {
 	listint_t *new_entry = malloc(sizeof(listint_t));
-	
+
 	if (new_entry == NULL)
 	{
 		/* If it's empty, we didnt allocate memory right? */
 		return (NULL);
 	}
-	
+
 	new_entry->n = n;
 	new_entry->next = NULL;
 
