@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * size_t print_list: Prints a list
+ * print_list - Prints a list
  * @h: The list passed to us
  * Return: 0 on failure, counter otherwise.
 */
@@ -18,7 +18,7 @@ size_t print_list(const list_t *h)
 
 	while (TempPointer != NULL)
 	{
-		if (TempPointer ->str == NULL)
+		if (TempPointer->str == NULL)
 		{
 			printf("[0] (nil)\n");
 		}
