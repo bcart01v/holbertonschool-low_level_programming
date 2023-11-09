@@ -3,7 +3,7 @@
 /**
  * print_list - Prints all the elements of a list_t list.
  * @h: A pointer to the start of the list to be printed.
- * 
+ * struct list_s: description
  * Return: The number of nodes on the list
 */
 
@@ -13,16 +13,16 @@ size_t print_list(const list_t *h)
 
 	while (h != NULL)
 	{
-		counter++;
 		if (h->str == NULL)
 			{
 			printf("[0] (nil)\n");
 			}
-		else 
+		else
 			{
 			printf("[%d] %s\n", h->len, h->str);
-			h = h->next;
 			}
+		h = h->next;
+		counter++;
 	}
 	return (counter);
 }
