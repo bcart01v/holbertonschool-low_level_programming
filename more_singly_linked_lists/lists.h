@@ -7,7 +7,6 @@
 
 /**
  * struct listint_t - A node in a singly linked list.
- * @str: A pointer to a dynamically allocated string associated with the node.
  * @len: The length of 'str'. It represents the number of characters in 'str',
  * excluding the null-terminating character.
  * @next: A pointer to the next node in the list, or NULL if it is the last
@@ -21,8 +20,7 @@
 typedef struct listint_t
 {
 	/* Restuctured for readability */
-	unsigned int len;
-	char *str; /* a string if we need it*/
+	unsigned int n;
 	struct listint_t *next;
 } listint_t;
 
