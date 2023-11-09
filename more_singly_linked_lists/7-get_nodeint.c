@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - Get the node at index passed
- * @head: Pointer to the node list.
- * @index: the index we want to print.
+ * get_nodeint_at_index - Takes the node at a specific index in a linked list
+ * @head: A pointer to the start of said linked list
+ * @index: the index of the node to be retrieved.
+ * Return: The node at the requested index, or null is whatever. 
 */
 
 listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
@@ -11,7 +12,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 	/* we're just returning the index of a list*/
 	unsigned int compare = 0;
 
-	while (head!= NULL)
+	while (head != NULL)
 	{
 		if (compare == index)
 		{
@@ -24,5 +25,5 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 		head = head->next;
 		compare++;
 	}
-	return NULL;
+	return (NULL);
 }
