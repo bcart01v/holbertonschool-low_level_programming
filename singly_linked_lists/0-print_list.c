@@ -9,26 +9,21 @@
 
 size_t print_list(const list_t *h)
 {
-	const list_t *TempPointer = h;
 	size_t counter = 0;
 
-	if (TempPointer == NULL)
+	while (h != NULL)
 	{
-	return (0);
-	}
-
-	while (TempPointer != NULL)
-	{
-		if (TempPointer->str == NULL)
-		{
-			printf("[0] (nil)\n");
-		}
-		else
-		{
-		printf("[%lu] %s\n", strlen(TempPointer->str), TempPointer->str);
-		}
-		TempPointer = TempPointer->next;
 		counter++;
+		if (h->str == NULL)
+			{
+			printf("[0] (nil)\n");
+			}
+		else 
+			{
+			printf("[%d] %s\n", h->len, h->str);
+			h = h->next;
+			}
 	}
 	return (counter);
 }
+
