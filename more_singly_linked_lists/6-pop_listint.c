@@ -3,7 +3,7 @@
 /**
  * pop_listint - Deletes the head node, and returns the data.
  * @head: Double pointer to the list.
- * Return - Update list. 
+ * Return: Update list.
 */
 
 int pop_listint(listint_t **head)
@@ -11,9 +11,9 @@ int pop_listint(listint_t **head)
 	int number;
 	listint_t *keepme;
 
-	if (*head == NULL) 
+	if (*head == NULL)
 	{
-		return(0);
+		return (0);
 	}
 
 	keepme = *head;
