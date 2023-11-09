@@ -7,8 +7,7 @@
 
 /**
  * struct listint_t - A node in a singly linked list.
- * @len: The length of 'str'. It represents the number of characters in 'str',
- * excluding the null-terminating character.
+ * @n: right now, the count of the nodes.
  * @next: A pointer to the next node in the list, or NULL if it is the last
  * node.
  * Description: This structure represents a single node in a singly linked
