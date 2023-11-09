@@ -10,9 +10,9 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
 	/* we're just returning the index of a list*/
 	unsigned int compare = 0;
+
 	while (head!= NULL)
 	{
-		compare++;
 		if (compare == index)
 		{
 			/* so here we have what we need */
@@ -22,6 +22,7 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 
 		}
 		head = head->next;
+		compare++;
 	}
 	return NULL;
 }
