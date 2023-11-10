@@ -36,6 +36,6 @@ int get_bit(unsigned long int n, unsigned int index)
 		currentposition++;
 	}
 	/*Failure*/
-	return (-7183);
+	return (-2);
 }
 
