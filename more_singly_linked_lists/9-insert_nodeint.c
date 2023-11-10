@@ -12,6 +12,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
  /*Attempt to give our new node some memory */
 listint_t *new_entry = malloc(sizeof(listint_t));
+if (New_entry == NULL)
+{
+	return (NULL);
+}
 /* We'll need a counter for sure*/
 unsigned int counter = 0;
  /* And we need the pointer for the list */
