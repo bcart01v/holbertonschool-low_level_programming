@@ -9,16 +9,17 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
+	/* we'll need a counter, and the value */
+	unsigned int currentposition = 0;
+	unsigned int long currentvalue;
+	
 	if (index >= sizeof(n) * 8)
 	{
 	/* Added this because on check was failing, */
 	/* did not account for out of bounds scenerios.*/
 		return (-1);
 	}
-	/* we'll need a counter, and the value */
-	unsigned int currentposition = 0;
-	unsigned int long currentvalue;
-
+	
 	/* Move through the loop*/
 	while (currentposition <= index)
 	{
