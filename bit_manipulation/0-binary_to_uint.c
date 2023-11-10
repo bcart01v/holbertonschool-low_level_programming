@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  binary_to_unit - Convert binary to an unsigned Int
+ *  binary_to_uit - Convert binary to an unsigned Int
  * @b: Pointer to the char we are converting
  * Return: The result, or 0 if failed
 */
@@ -19,7 +19,7 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	}
 	/* move through b */
-	for (counter = 0; counter< getlen; counter++)
+	for (counter = 0; counter < getlen; counter++)
 	{
 	/* have to make room for next in line */
 	/* this was my issue. */
@@ -30,8 +30,8 @@ unsigned int binary_to_uint(const char *b)
 		}
 		else if (b[counter] != '0')
 		{
-			return 0;
+			return (0);
 		}
 	}
-	return result;
+	return (result);
 }
