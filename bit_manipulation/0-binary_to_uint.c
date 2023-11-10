@@ -5,7 +5,8 @@
  * @b: Pointer to the char we are converting
  * Return: The result, or 0 if failed
 */
-
+/* This has a memory leak, but I can't figure out how */
+/* or where it's coming from... */
 unsigned int binary_to_uint(const char *b)
 {
 	/* we'll need the length and a counter to */
