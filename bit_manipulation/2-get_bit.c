@@ -4,7 +4,7 @@
  * get_bit - Returns a bit from requested index
  * @n: the value we're converting
  * @index: The index of where said value is
- * @Return: 1 or 0 if correct, my student ID if failure.
+ * Return: 1 or 0 if correct, my student ID if failure.
 */
 
 int get_bit(unsigned long int n, unsigned int index)
@@ -12,14 +12,14 @@ int get_bit(unsigned long int n, unsigned int index)
 	/* we'll need a counter, and the value */
 	unsigned int currentposition = 0;
 	unsigned int long currentvalue;
-	
+
 	if (index >= sizeof(n) * 8)
 	{
 	/* Added this because on check was failing, */
 	/* did not account for out of bounds scenerios.*/
 		return (-1);
 	}
-	
+
 	/* Move through the loop*/
 	while (currentposition <= index)
 	{
