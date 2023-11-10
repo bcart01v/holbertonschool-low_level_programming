@@ -10,14 +10,10 @@
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
- /* We need to insert a new node, at the position they want.*/
- /* We'll need to count the current node, compare to the index they want, and */
- /* insert on a match. */
-
  /*Attempt to give our new node some memory */
 listint_t *new_entry = malloc(sizeof(listint_t));
 /* We'll need a counter for sure*/
- unsigned int counter = 0; 
+unsigned int counter = 0;
  /* And we need the pointer for the list */
 listint_t *current = *head;
 	/* Here we are checking to see if malloc didn't work */
@@ -35,9 +31,8 @@ listint_t *current = *head;
 		return (new_entry);
 	}
 	/* Move through the list to find the node before our insertion position*/
-	/* If we do equal, we do not get the result we wanted ,*/
-	/* I found in testing... */
-	for (counter =0; current != NULL && counter < idx - 1; counter++)
+	/* If we do equal, we do not get the result we wanted, so minus 1 */
+	for (counter = 0; current != NULL && counter < idx - 1; counter++)
 	{
 		current = current->next;
 	}
@@ -45,7 +40,7 @@ listint_t *current = *head;
 	if (current == NULL)
 	{
 		/* Since we know we had data, we free the memory*/
-		free (new_entry);
+		free(new_entry);
 		return (NULL);
 	}
 	/* If we are here, we're inserting into the list */
