@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 	}
 	/* Find the first set bit from the start */
 	/* It stops when mask & n is not zero */
-	while ((mask & n ) == 0)
+	while ((mask & n) == 0)
 	{
 		mask >>= 1;
 	}
