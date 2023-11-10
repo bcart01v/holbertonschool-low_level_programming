@@ -10,9 +10,9 @@
 int get_bit(unsigned long int n, unsigned int index)
 {
 	/* we'll need a counter, and the value */
+	
 	unsigned int currentposition = 0;
 	unsigned int long currentvalue;
-
 
 	if (index >= sizeof(n) * 8)
 	{
