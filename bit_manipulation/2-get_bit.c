@@ -9,9 +9,16 @@
 
 int get_bit(unsigned long int n, unsigned int index)
 {
+	if (index >= sizeof(n) * 8)
+	{
+	/* Added this because on check was failing, */
+	/* did not account for out of bounds scenerios.*/
+		return (-1);
+	}
 	/* we'll need a counter, and the value */
 	unsigned int currentposition = 0;
 	unsigned int long currentvalue;
+
 	/* Move through the loop*/
 	while (currentposition <= index)
 	{
@@ -24,18 +31,18 @@ int get_bit(unsigned long int n, unsigned int index)
 			/*if it's not 0, it's gotta be 1*/
 			if (currentvalue != 0)
 			{
-				return 1;
+				return (1);
 			}
 			else
 			{
 			/* It's a 0, obviously.*/
-				return 0;
+				return (0);
 			}
 		}
 		/*next in line*/
 		currentposition++;
 	}
 	/*Failure*/
-	return (-2);
+	return (-7183);
 }
 
