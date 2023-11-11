@@ -4,6 +4,7 @@
  * clear_bit - Sets the bit value to 0 at given index
  * @n: A pointer to the bit that needs clearing
  * @index: the index of the bit to clear.
+ * Return - 1 if it worked, -1 if not.
 */
 
 int clear_bit(unsigned long int *n, unsigned int index)
@@ -20,7 +21,7 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	/* << is shifting the binary representation of 1UL */
 	/* to the left by the number passed by index. */
 	/* https://www.geeksforgeeks.org/bitwise-operators-in-c-cpp/# */
-	
+
 	*n &= ~(1UL << index);
 
 	return (1);
