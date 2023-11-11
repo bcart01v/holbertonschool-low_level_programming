@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	unsigned int count = 0;
 
 	/* Count the number of bits set in compute */
-	while (compute > 0) 
+	while (compute > 0)
 	{
 		/* Increase count if the least bit is 1 */
 		count += compute & 1;
