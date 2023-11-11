@@ -4,7 +4,7 @@
  * clear_bit - Sets the bit value to 0 at given index
  * @n: A pointer to the bit that needs clearing
  * @index: the index of the bit to clear.
- * Return - 1 if it worked, -1 if not.
+ * Return: 1 if it worked, -1 if not.
 */
 
 int clear_bit(unsigned long int *n, unsigned int index)
