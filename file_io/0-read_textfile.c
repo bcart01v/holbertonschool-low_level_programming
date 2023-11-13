@@ -11,10 +11,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char *buffer = (char *)malloc(sizeof(char) * letters);
 	int thefile = open(filename, O_RDONLY);
-	ssize_t bytesread = read(thefile, buffer, letters);
-	ssize_t byteswritten = write(STDOUT_FILENO, buffer, bytesread);
+	ssize_t bytesread;
+	ssize_t byteswritten;
 
-
+	/* The following are failsafes. */
+	if (filename == NULL)
+	{
+		return (0);
+	}
 	if (thefile == -1)
 	{
 		return (0);
@@ -25,18 +29,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(thefile);
 		return (0);
 	}
+	/* If we made it here, there's a file to read! */
+	/* this is both reading and counting what's being read. */
+	bytesread = read(thefile, buffer, letters);
 	if (bytesread == -1)
 	{
 		close(thefile);
 		free(buffer);
 		return (0);
 	}
-
+	/* Now we write, while also counting what's written. */
+	byteswritten = write(STDOUT_FILENO, buffer, bytesread);
 	if (byteswritten == -1 || byteswritten < bytesread)
 	{
 		bytesread = 0;
 	}
-
+	/* we're done, free up the memory and close the file (Not in that order)*/
 	close(thefile);
 	free(buffer);
 	return (byteswritten);
