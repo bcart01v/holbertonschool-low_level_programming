@@ -4,6 +4,7 @@
  * read_textfile - pass on a text file and this function will print it.
  * @filename: The file we're printing
  * @letters: The number of letters we're printing.
+ * Return - a 0 if failed, the count if no fail.
 */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -28,7 +29,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		close(thefile);
 		free(buffer);
-		return(0);
+		return (0);
 	}
 
 	if (byteswritten == -1 || byteswritten < bytesread)
@@ -38,8 +39,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	close(thefile);
 	free(buffer);
-	return byteswritten;
-	
+	return (byteswritten);
+
 }
 
 
