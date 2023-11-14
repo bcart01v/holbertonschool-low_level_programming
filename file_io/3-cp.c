@@ -15,7 +15,7 @@ void close_file(int fd)
  * main - Entrypoint
  * @argc: Number of arguments passed into program
  * @argv: The variables passed through the argument.
- * @Return: 0 On success, all others are errors;
+ * Return: 0 On success, all others are errors.
 */
 int main(int argc, char *argv[])
 {
