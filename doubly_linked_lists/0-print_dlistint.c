@@ -3,24 +3,17 @@
 /**
  * print_dlistint - prints a list of 
  * @h: Pointer to the list we are going to print.
- * 
+ * Return: The count of the list
 */
 
 size_t print_dlistint(const dlistint_t *h)
 {
 	size_t counter = 0;
-	const dlistint_t *hold = NULL;
 
-	hold = h;
 	while (h != NULL)
 	{
-		if(h->prev != NULL)
-		{
-			while(hold->prev != NULL)
-			hold = hold->prev;
-		}
-		printf("[%d]\n", hold->n);
-		hold = hold -> next;
+		printf("[%d]\n", h->n);
+		h = h->next;
 		counter++;
 	}
 	return (counter);
