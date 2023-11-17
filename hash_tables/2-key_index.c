@@ -13,7 +13,8 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 /* Size is the size of the array in the hash table	*/
 	if (key!= NULL)
 	{
-	unsigned long int hash = hash_djb2(key);
+	long unsigned int hash = hash_djb2(key);	
 	return (hash % size);
 	}
+	return (0);
 }
