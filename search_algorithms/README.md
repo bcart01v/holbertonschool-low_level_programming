@@ -1,0 +1,1 @@
+This is the readme for the Search Algorithm project for Holberton.
